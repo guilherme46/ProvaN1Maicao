@@ -13,9 +13,10 @@
         <title>Questão 01 - Prova N1</title>
     </head>
     <body>
-        <h1>Questão 1</h1>
+        <h1>Questão 1</h1><br>
+        <h2>Informe a quantidade a ser abastecida: (Ex.: 20)</h2><br>
         <form action="questao1" method="POST">
-            <input type="text" name="numero"/>
+            <input type="text" name="abastecer1"/>
             <input type="submit" value="Enviar"/>
         </form>
     </body>

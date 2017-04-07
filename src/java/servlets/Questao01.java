@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,9 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Laboratorio
+ * @author Guilherme
  */
-@WebServlet(urlPatterns = {"/questao01"})
+@WebServlet(name = "Questao01", urlPatterns = {"/questao01"})
 public class Questao01 extends HttpServlet {
 
     /**
@@ -30,16 +31,22 @@ public class Questao01 extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        int n = Integer.valueOf(request.getParameter("abastecer1"));
+ 
+
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Questao01</title>");            
+            out.println("<title>Questao1</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Questao01 at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Resultado</h1>");
+   
+           
             out.println("</body>");
             out.println("</html>");
         }
