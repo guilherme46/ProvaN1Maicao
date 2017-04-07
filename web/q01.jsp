@@ -14,10 +14,13 @@
     </head>
     <body>
         <h1>Questão 1</h1><br>
-        <h2>Informe a quantidade a ser abastecida: (Ex.: 20)</h2><br>
-        <form action="questao1" method="POST">
-            <input type="text" name="abastecer1"/>
-            <input type="submit" value="Enviar"/>
+        <h2>Informe o valor do litro da(o):</h2><br>
+        <form action="questao01" method="POST">
+            <b>Álcool</b>: 
+            <input type="text" name="alcool1"/><br>
+            <b>Gasolina</b>:
+            <input type="text" name="gasolina1"/><br>
+            <input type="submit" value="Verificar"/>
         </form>
     </body>
 </html>
