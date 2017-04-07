@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Guilherme e Rodrigo
  */
-@WebServlet(name = "Questao01", urlPatterns = {"/questao01"})
-public class Questao01 extends HttpServlet {
+@WebServlet(name = "Questao002", urlPatterns = {"/questao002"})
+public class Questao002 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,11 +32,9 @@ public class Questao01 extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        double gasolina = Double.parseDouble(request.getParameter("gasolina1"));
-        double alcool = Double.parseDouble(request.getParameter("alcool1"));
- 
-      double division;
-      division = (alcool/gasolina);
+        Double media2 = Double.valueOf(request.getParameter("med2"));
+       
+
 
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -44,16 +42,15 @@ public class Questao01 extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Questao1</title>");            
+            out.println("<title>Questao2</title>");            
             out.println("</head>");
             out.println("<body>");
             
-            if (division>=0.7){
-                out.println("É melhor abastecer com gasolina");
-            }
-           if (division<=0.7){
-                out.println("É melhor abastecer com álcool");
-            }
+            if (media2>=7)
+                out.println("Você foi aprovado!");
+            if (media2<7)
+                out.println("Você foi reprovado!");
+          
          
            
             out.println("</body>");
