@@ -1,7 +1,7 @@
 <%-- 
     Document   : q03
     Created on : 06/04/2017, 19:43:53
-    Author     : Rodrigo
+    Author     : Guilherme e Rodrigo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
